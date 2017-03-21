@@ -2,7 +2,7 @@
 # All php functions
 
 
-Storing the basic info of all PHP functions(4574) in a json file, like: name, version supporting.
+Storing the basic info of all **deprecated** PHP functions(12) in a json file, like: name, version supporting.
 
 eg:
 
