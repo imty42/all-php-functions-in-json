@@ -17,7 +17,7 @@ if (! isset($matches[1])) {
 
 
 # use dash doc local url for speed
-$func_page_prefix = 'http://127.0.0.1:63904/Dash/aibcpgne/php.net/manual/en/';
+$func_page_prefix = 'http://127.0.0.1:58256/Dash/aibcpgne/php.net/manual/en/';
 $func_page_prefix_real = 'http://php.net/manual/en/';
 
 $result = array();
@@ -38,7 +38,7 @@ foreach ($matches[1] as $func_page_name) {
 
     if (strpos($func_page_cont, '<div id="function.'. $func_name . '-refsynopsisdiv"') === false) {
         // if no warning included
-//        continue;
+        continue;
     }
 
     preg_match('/<p class="verinfo">\((.*?)\)<\/p>/is', $func_page_cont, $pmatches);
